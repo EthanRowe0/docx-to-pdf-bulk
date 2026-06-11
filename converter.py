@@ -26,7 +26,7 @@ BANNER = r"""
  / __ \/ _ \ / ___/ |/ / / /_/ __  \/ __ \/ __ \/ __/
 / /_/ / // // /__ >   < / __/ /_/ // /_/ / /_/ / _/
 \____/\___/ \___//_/|_|/_/  \____/ \____/\____/_/
-       Bulk DOC / DOCX  →  PDF  Converter
+       Bulk DOC / DOCX  ->  PDF  Converter
 """
 
 
@@ -101,16 +101,16 @@ def print_summary(
     output_root: Path,
 ):
     width = 60
-    print("\n" + "─" * width)
+    print("\n" + "-" * width)
     print("  RESULTS")
-    print("─" * width)
+    print("-" * width)
     print(f"  Total found   : {total}")
     print(f"  Converted     : {success}")
     print(f"  Skipped       : {skipped}  (PDF already exists)")
     print(f"  Failed        : {len(failures)}")
     print(f"  Time elapsed  : {elapsed:.1f}s")
     print(f"  Output folder : {output_root}")
-    print("─" * width)
+    print("-" * width)
 
     if failures:
         print("\n  FAILURES:")
